@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="auto">
+<html lang="ar" dir="rtl" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,14 @@
     <meta name="author" content="Asem Khabsh">
     <title>عاصم خبش | Portfolio</title>
 
-    <!-- Bootstrap 5.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS (RTL) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Google Fonts - Cairo for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +33,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                <span class="text-primary">عاصم</span> خبش
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo.png" alt="عاصم خبش" height="50" class="d-inline-block align-text-top">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="قائمة التنقل" title="قائمة التنقل">
-                <span class="navbar-toggler-icon"></span>
-                <span class="visually-hidden">قائمة التنقل</span>
-            </button>
+
+            <div class="d-flex align-items-center gap-2 order-lg-3">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="قائمة التنقل" title="قائمة التنقل">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="visually-hidden">قائمة التنقل</span>
+                </button>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">الرئيسية</a>
                     </li>
@@ -67,18 +77,132 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 order-lg-2 text-center mb-4 mb-lg-0">
-                    <div class="profile-image-wrapper">
-                        <img src="images/my_pictuer.png" alt="Head-and-shoulders portrait of a young man facing the camera with a calm, confident expression; wearing a striped collared shirt; circular crop on a neutral studio background with soft, even lighting; no visible text" class="profile-image img-fluid rounded-circle shadow-lg">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div id="heroCarousel" class="carousel slide hero-carousel shadow-lg rounded-4 overflow-hidden"
+                        data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9"
+                                aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10"
+                                aria-label="Slide 11"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/project_tamsik_landing.png" class="d-block w-100 object-fit-cover"
+                                    alt="منصة تمسيك" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">منصة تمسيك</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_1.png" class="d-block w-100 object-fit-cover"
+                                    alt="صفحة المحاضرات الدورية" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">صفحة المحاضرات الدورية</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_2.png" class="d-block w-100 object-fit-cover"
+                                    alt="العلماء اليمنيين" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">واجهة العلماء اليمنيين</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_3.png" class="d-block w-100 object-fit-cover"
+                                    alt="الخطب والمحاضرات" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">نظام المحاضرات والخطب</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_4.png" class="d-block w-100 object-fit-cover"
+                                    alt="أقسام الموقع" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">تصفح أقسام الموقع</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_book_design.png" class="d-block w-100 object-fit-cover"
+                                    alt="تصميم كتاب" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">تصميم كتاب</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/project_logo_design.jpg"
+                                    class="d-block w-90 mx-auto object-fit-contain" alt="تصميم شعار"
+                                    style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">تصميم شعار</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/controlpanal.jpeg" class="d-block w-70 mx-auto object-fit-contain"
+                                    alt="تطبيق أندرويد" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">تطبيق أندرويد</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tasks.jpeg" class="d-block w-70 mx-auto object-fit-contain"
+                                    alt="نظام المهام" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">نظام المهام</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pomodoro.jpeg" class="d-block w-70 mx-auto object-fit-contain"
+                                    alt="نظام بومودورو" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">نظام بومودورو</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/learnning.jpeg" class="d-block w-70 mx-auto object-fit-contain"
+                                    alt="بطاقات تعلم" style="height: 400px;">
+                                <div class="carousel-caption d-block bg-dark bg-opacity-50 rounded-3 p-2 mb-4">
+                                    <h5 class="text-white mb-0">بطاقات تعلم</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">السابق</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">التالي</span>
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <h1 class="display-4 fw-bold mb-3 fade-in">مرحباً، أنا <span class="text-primary">عاصم خبش</span>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3">مرحباً، أنا <span class="text-primary">عاصم خبش</span>
                     </h1>
-                    <h2 class="h4 text-muted mb-4 fade-in">مهندس حاسوب | مطور ويب | مصمم هويات بصرية</h2>
-                    <p class="lead mb-4 fade-in">أقدم حلولاً إبداعية واحترافية في تطوير المواقع، تصميم الهويات البصرية،
+                    <h2 class="h4 text-muted mb-4">مهندس حاسوب | مطور ويب | مصمم هويات بصرية</h2>
+                    <p class="lead mb-4">أقدم حلولاً إبداعية واحترافية في تطوير المواقع، تصميم الهويات البصرية،
                         وإعداد المحتوى الأكاديمي والتقني.</p>
-                    <div class="d-flex gap-3 flex-wrap fade-in">
+                    <div class="d-flex gap-3 flex-wrap mb-5">
                         <a href="#contact" class="btn btn-primary btn-lg px-4">
                             <i class="bi bi-envelope-fill me-2"></i>اطلب خدمتك
                         </a>
@@ -95,13 +219,13 @@
     <section id="about" class="py-5 bg-light">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold mb-3">من أنا</h2>
                     <div class="title-underline mx-auto"></div>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
                     <h3 class="h4 fw-bold mb-4">عاصم خبش - مهندس حاسوب</h3>
                     <p class="lead mb-4">
                         أعمل في مجال العمل الحر، وأقدم خدمات متنوعة تشمل تصميم الهويات البصرية، تطوير مواقع الويب،
@@ -114,7 +238,7 @@
                         التي تلبي احتياجات عملائي وتتجاوز توقعاتهم.
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h4 class="h5 fw-bold mb-4">المهارات التقنية</h4>
 
                     <div class="skill-item mb-3">
@@ -123,7 +247,8 @@
                             <span class="text-muted">95%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-95 bg-primary" role="progressbar" aria-label="HTML & CSS skill level"></div>
+                            <div class="progress-bar progress-bar-95 bg-primary" role="progressbar"
+                                aria-label="HTML & CSS skill level"></div>
                         </div>
                     </div>
 
@@ -133,7 +258,8 @@
                             <span class="text-muted">90%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-90 bg-primary" role="progressbar" aria-label="Bootstrap skill level"></div>
+                            <div class="progress-bar progress-bar-90 bg-primary" role="progressbar"
+                                aria-label="Bootstrap skill level"></div>
                         </div>
                     </div>
 
@@ -143,7 +269,8 @@
                             <span class="text-muted">85%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-85 bg-primary" role="progressbar" aria-label="PHP & Laravel skill level"></div>
+                            <div class="progress-bar progress-bar-85 bg-primary" role="progressbar"
+                                aria-label="PHP & Laravel skill level"></div>
                         </div>
                     </div>
 
@@ -153,7 +280,8 @@
                             <span class="text-muted">80%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-80 bg-primary" role="progressbar" aria-label="Flutter skill level"></div>
+                            <div class="progress-bar progress-bar-80 bg-primary" role="progressbar"
+                                aria-label="Flutter skill level"></div>
                         </div>
                     </div>
 
@@ -163,7 +291,8 @@
                             <span class="text-muted">90%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-90 bg-primary" role="progressbar" aria-label="Photoshop & Illustrator skill level"></div>
+                            <div class="progress-bar progress-bar-90 bg-primary" role="progressbar"
+                                aria-label="Photoshop & Illustrator skill level"></div>
                         </div>
                     </div>
 
@@ -173,7 +302,8 @@
                             <span class="text-muted">88%</span>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-88 bg-primary" role="progressbar" aria-label="WordPress skill level"></div>
+                            <div class="progress-bar progress-bar-88 bg-primary" role="progressbar"
+                                aria-label="WordPress skill level"></div>
                         </div>
                     </div>
                 </div>
@@ -185,7 +315,7 @@
     <section id="services" class="py-5">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold mb-3">خدماتي</h2>
                     <div class="title-underline mx-auto"></div>
                     <p class="lead text-muted mt-3">أقدم مجموعة متنوعة من الخدمات الاحترافية</p>
@@ -193,7 +323,7 @@
             </div>
             <div class="row g-4">
                 <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
@@ -207,7 +337,7 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
@@ -221,7 +351,7 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
@@ -235,21 +365,21 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
                                 <i class="bi bi-file-earmark-text-fill"></i>
                             </div>
-                            <h3 class="h5 fw-bold mb-3">إعداد بحوث أكاديمية</h3>
-                            <p class="text-muted">إعداد وتنسيق البحوث والتقارير الأكاديمية (بكالوريوس، ماجستير، دكتوراه)
+                            <h3 class="h5 fw-bold mb-3">تنسيق بحوث أكاديمية</h3>
+                            <p class="text-muted">تنسيق البحوث والتقارير الأكاديمية (بكالوريوس، ماجستير، دكتوراه)
                                 وفق المعايير العلمية.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
@@ -263,7 +393,7 @@
                 </div>
 
                 <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-card card h-100 border-0 shadow-sm">
                         <div class="card-body text-center p-4">
                             <div class="service-icon mb-3">
@@ -283,7 +413,7 @@
     <section id="portfolio" class="py-5 bg-light">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold mb-3">أعمالي</h2>
                     <div class="title-underline mx-auto"></div>
                     <p class="lead text-muted mt-3">نماذج من مشاريعي السابقة</p>
@@ -291,11 +421,11 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <!-- Portfolio Item 1 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://via.placeholder.com/600x400/4A90E2/FFFFFF?text=منصة+تمسيك"
-                                alt="منصة تمسيك الإسلامية" class="img-fluid">
+                            <img src="images/project_tamsik_landing.png" alt="منصة تمسيك الإسلامية" class="img-fluid"
+                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-info">
                                     <i class="bi bi-code-slash mb-3" style="font-size: 2.5rem;"></i>
@@ -309,11 +439,11 @@
                 </div>
 
                 <!-- Portfolio Item 2 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://via.placeholder.com/600x400/50C878/FFFFFF?text=تصميم+شعار"
-                                alt="تصميم شعار" class="img-fluid">
+                            <img src="images/project_logo_design.jpg" alt="تصميم شعار" class="img-fluid"
+                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-info">
                                     <i class="bi bi-palette-fill mb-3" style="font-size: 2.5rem;"></i>
@@ -327,11 +457,11 @@
                 </div>
 
                 <!-- Portfolio Item 3 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://via.placeholder.com/600x400/FF6B6B/FFFFFF?text=تصميم+كتاب"
-                                alt="تصميم كتاب" class="img-fluid">
+                            <img src="images/project_book_design.png" alt="تصميم كتاب" class="img-fluid"
+                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-info">
                                     <i class="bi bi-book-fill mb-3" style="font-size: 2.5rem;"></i>
@@ -345,7 +475,7 @@
                 </div>
 
                 <!-- Portfolio Item 4 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
                             <img src="https://via.placeholder.com/600x400/9B59B6/FFFFFF?text=موقع+تجاري"
@@ -363,7 +493,7 @@
                 </div>
 
                 <!-- Portfolio Item 5 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
                             <img src="https://via.placeholder.com/600x400/F39C12/FFFFFF?text=مجلة+رقمية"
@@ -381,7 +511,7 @@
                 </div>
 
                 <!-- Portfolio Item 6 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
                             <img src="https://via.placeholder.com/600x400/3498DB/FFFFFF?text=بحث+أكاديمي"
@@ -405,20 +535,22 @@
     <section id="testimonials" class="py-5">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold mb-3">آراء العملاء</h2>
                     <div class="title-underline mx-auto"></div>
                     <p class="lead text-muted mt-3">ماذا يقول عملائي عن خدماتي</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-10 mx-auto" data-aos="zoom-in">
                     <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
                                 class="active" aria-label="Slide 1" title="Go to testimonial 1"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2" title="Go to testimonial 2"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3" title="Go to testimonial 3"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2" title="Go to testimonial 2"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3" title="Go to testimonial 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <!-- Testimonial 1 -->
@@ -513,7 +645,7 @@
     <section id="contact" class="py-5 bg-light">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold mb-3">تواصل معي</h2>
                     <div class="title-underline mx-auto"></div>
                     <p class="lead text-muted mt-3">لديك مشروع؟ دعنا نتحدث!</p>
@@ -521,22 +653,22 @@
             </div>
             <div class="row g-4">
                 <!-- Contact Form -->
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left">
                     <div class="card border-0 shadow-sm p-4">
-                        <form>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                             <div class="mb-3">
                                 <label for="fullName" class="form-label fw-semibold">الاسم الكامل</label>
-                                <input type="text" class="form-control form-control-lg" id="fullName"
+                                <input type="text" class="form-control form-control-lg" id="fullName" name="name"
                                     placeholder="أدخل اسمك الكامل" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-semibold">البريد الإلكتروني</label>
-                                <input type="email" class="form-control form-control-lg" id="email"
+                                <input type="email" class="form-control form-control-lg" id="email" name="email"
                                     placeholder="example@email.com" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-semibold">الرسالة</label>
-                                <textarea class="form-control form-control-lg" id="message" rows="5"
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="5"
                                     placeholder="اكتب رسالتك هنا..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg w-100">
@@ -547,7 +679,7 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right">
                     <div class="card border-0 shadow-sm p-4 mb-4">
                         <h4 class="h5 fw-bold mb-4">معلومات التواصل</h4>
 
@@ -588,7 +720,8 @@
                             <a href="https://www.facebook.com/share/19xh213a6A/" class="social-link" title="Facebook">
                                 <i class="bi bi-facebook"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/asem-khabash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/asem-khabash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                class="social-link" title="LinkedIn">
                                 <i class="bi bi-linkedin"></i>
                             </a>
                             <a href="#" class="social-link" title="Behance">
@@ -600,7 +733,8 @@
                             <a href="http://wa.me/+967780002776" class="social-link" title="WhatsApp">
                                 <i class="bi bi-whatsapp"></i>
                             </a>
-                            <a href="https://www.instagram.com/asem_khabash?igsh=dGYyd2VqbGx1OHlm" class="social-link" title="Instagram">
+                            <a href="https://www.instagram.com/asem_khabash?igsh=dGYyd2VqbGx1OHlm" class="social-link"
+                                title="Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </div>
@@ -614,7 +748,7 @@
     <section class="cta-section py-5">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
+                <div class="col-lg-10 mx-auto text-center" data-aos="zoom-in">
                     <h2 class="display-5 fw-bold text-white mb-4">هل تبحث عن مصمم ومطور ينجز عملك باحترافية؟</h2>
                     <p class="lead text-white mb-4">تواصل معي الآن ودعنا نحول أفكارك إلى واقع ملموس</p>
                     <a href="#contact" class="btn btn-light btn-lg px-5">
@@ -625,15 +759,37 @@
         </div>
     </section>
 
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav fixed-bottom bg-white d-block d-lg-none">
+        <div class="d-flex justify-content-around">
+            <a href="#home" class="mobile-nav-item active">
+                <i class="bi bi-house"></i>
+                <span>الرئيسية</span>
+            </a>
+            <a href="#services" class="mobile-nav-item">
+                <i class="bi bi-grid"></i>
+                <span>خدماتي</span>
+            </a>
+            <a href="#portfolio" class="mobile-nav-item">
+                <i class="bi bi-briefcase"></i>
+                <span>أعمالي</span>
+            </a>
+            <a href="#contact" class="mobile-nav-item">
+                <i class="bi bi-chat-dots"></i>
+                <span>تواصل</span>
+            </a>
+        </div>
+    </nav>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2025 عاصم خبش. جميع الحقوق محفوظة.</p>
+                    <p class="mb-0" style="direction: rtl;"> جميع الحقوق محفوظة &copy; عاصم خبش 2025</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">تم التطوير بواسطة: عاصم خبش</p>
+                    <p class="mb-0" style="direction: rtl;">تم التطوير بواسطة: عاصم خبش</p>
                 </div>
             </div>
         </div>
@@ -642,61 +798,11 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Smooth Scroll Script -->
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                // Skip if it's just a hash or doesn't point to a section
-                if (href === '#' || !href.startsWith('#')) {
-                    return;
-                }
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-
-                    // Close mobile menu if open
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                            toggle: false
-                        });
-                        bsCollapse.hide();
-                    }
-
-                    // Smooth scroll to target
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Active nav link on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
 
 </body>
 
