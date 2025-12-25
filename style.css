@@ -1110,8 +1110,8 @@ section {
 .mobile-nav-item {
     flex: 1;
     text-align: center;
-    text-decoration: none;
-    color: var(--text-muted);
+    text-decoration: none !important;
+    color: var(--text-muted) !important;
     font-size: 0.75rem;
     padding: 0.5rem 0;
     transition: var(--transition);
@@ -1124,17 +1124,44 @@ section {
 }
 
 .mobile-nav-item.active {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     font-weight: 600;
 }
 
 .mobile-nav-item:hover {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 @media (min-width: 992px) {
     .mobile-bottom-nav {
         display: none !important;
+    }
+}
+
+/* ===== Responsive Hero Slider ===== */
+.hero-slider-img {
+    height: 400px;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding-top: 120px;
+        /* Adjust padding for mobile to prevent navbar overlap */
+        min-height: auto;
+        /* Allow content to dictate height on mobile */
+    }
+
+    .hero-slider-img {
+        height: 50vh;
+        /* Use viewport height for better mobile experience */
+        max-height: 500px;
+    }
+
+    /* Ensure row takes up screen space but doesn't force scroll unnecessarily */
+    .hero-section .row {
+        min-height: auto;
+        padding-bottom: 2rem;
     }
 }
 
