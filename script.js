@@ -5,6 +5,10 @@ AOS.init({
     offset: 100
 });
 
+// Initialize Bootstrap Tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
 // Dark Mode Toggle
 const themeToggle = document.getElementById('themeToggle');
 const htmlElement = document.documentElement;

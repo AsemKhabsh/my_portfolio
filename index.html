@@ -1,679 +1,503 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عاصم خبش | مهندس برمجيات ومطور ويب شامل (Full Stack Developer)</title>
+    <title>عاصم خبش | مطور Frontend و Android ومصمم جرافيكس</title>
     <meta name="description"
-        content="حقق نجاح مشروعك الرقمي مع عاصم خبش. مهندس حاسوب ومطور ويب (Full-Stack) متخصص في بناء منصات متكاملة، تطبيقات جوال، وهويات بصرية احترافية. تصفح معرض الأعمال.">
+        content="عاصم خبش - مطور Frontend ومطور تطبيقات Android ومصمم جرافيكس متخصص في بناء منصات رقمية متكاملة وهويات بصرية احترافية.">
     <meta name="keywords"
-        content="عاصم خبش, Asem Khabsh, مهندس حاسوب, مطور ويب, تصميم شعارات, هوية بصرية, تصميم جرافيك, تطوير مواقع, Web Developer, Graphic Designer, Portfolio, اليمن, مأرب">
+        content="عاصم خبش, Asem Khabsh, مطور ويب, مصمم جرافيك, Frontend Developer, Android Developer, Web Developer, Graphic Designer">
     <meta name="author" content="Asem Khabsh">
     <link rel="canonical" href="https://asemkhabsh.github.io/my_portfolio/">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asemkhabsh.github.io/my_portfolio/">
-    <meta property="og:title" content="عاصم خبش | مهندس حاسوب ومصمم هويات بصرية">
-    <meta property="og:description" content="تطوير ويب، تصميم جرافيك، وحلول تقنية متكاملة.">
+    <meta property="og:title" content="عاصم خبش | مطور Frontend و Android ومصمم جرافيكس">
+    <meta property="og:description"
+        content="مطور Frontend ومطور تطبيقات Android ومصمم جرافيكس متخصص في بناء منصات رقمية متكاملة.">
     <meta property="og:image" content="https://asemkhabsh.github.io/my_portfolio/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://asemkhabsh.github.io/my_portfolio/">
-    <meta property="twitter:title" content="عاصم خبش | مهندس حاسوب ومصمم هويات بصرية">
-    <meta property="twitter:description" content="تطوير ويب، تصميم جرافيك، وحلول تقنية متكاملة.">
-    <meta property="twitter:image" content="https://asemkhabsh.github.io/my_portfolio/images/logo.png">
+    <meta property="twitter:title" content="عاصم خبش | مطور Frontend و Android ومصمم جرافيكس">
+    <meta property="twitter:description"
+        content="مطور Frontend ومطور تطبيقات Android ومصمم جرافيكس متخصص في بناء منصات رقمية متكاملة.">
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Asem Khabsh",
-      "url": "https://asemkhabsh.github.io/my_portfolio/",
-      "image": "https://asemkhabsh.github.io/my_portfolio/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/share/19xh213a6A/",
-        "https://www.linkedin.com/in/asem-khabash",
-        "https://github.com/AsemKhabsh",
-        "https://www.instagram.com/asem_khabash"
-      ],
-      "jobTitle": "Computer Engineer & Web Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Freelance"
-      },
-      "description": "Computer Engineer, Web Developer, and Graphic Designer based in Yemen."
-    }
-    </script>
-
-    <!-- Bootstrap 5.3 CSS (RTL) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
 
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Google Fonts - Cairo for Arabic -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Preload LCP Image -->
-    <link rel="preload" as="image" href="images/project_tamsik_landing.png">
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="images/logo.png" alt="عاصم خبش" height="50" class="d-inline-block align-text-top">
+            <a href="#home" class="navbar-brand">
+                <img src="images/logo.png" alt="عاصم خبش">
             </a>
 
-            <div class="d-flex align-items-center gap-2 order-lg-3">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="قائمة التنقل" title="قائمة التنقل">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="visually-hidden">قائمة التنقل</span>
-                </button>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#services" class="nav-link">خدماتي</a></li>
+                <li><a href="#portfolio" class="nav-link">أعمالي</a></li>
+                <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+            </ul>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">من أنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">خدماتي</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">أعمالي</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">آراء العملاء</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">تواصل معي</a>
-                    </li>
-                </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="تبديل الوضع" title="تبديل الوضع الليلي/النهاري">
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary">ابدأ مشروعك</a>
+                <button class="nav-toggle" aria-label="القائمة">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center min-vh-100 py-5">
-                <!-- Hero Text -->
-                <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
-                    <span
-                        class="d-inline-block py-1 px-3 rounded-pill bg-primary bg-opacity-10 text-primary fw-bold mb-3 fs-6 border border-primary border-opacity-10">
-                        <i class="bi bi-code-slash me-2"></i>مهندس حاسوب & Full-Stack Developer
-                    </span>
-                    <h1 class="display-3 fw-bold mb-4 leading-tight">
-                        أبني تجارب رقمية <span class="text-gradient">استثنائية</span> تحقق النتائج.
-                    </h1>
-                    <p class="lead text-muted mb-5 fs-5">
-                        أحول أفكارك إلى حلول تقنية متكاملة. متخصص في تطوير الويب، تصميم الهويات البصرية، وبناء الأنظمة
-                        القابلة للتوسع. شريكك التقني للنمو.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 shadow-lg hover-lift">
-                            <i class="bi bi-send-fill me-2"></i>ابـدأ مشـروعـك
-                        </a>
-                        <a href="#portfolio" class="btn btn-outline-primary btn-lg px-5 py-3 shadow-sm hover-lift">
-                            <i class="bi bi-briefcase-fill me-2"></i>شاهد أعمالي
-                        </a>
-                    </div>
+    <!-- Hero Section - Bento Grid -->
+    <section id="home" class="hero-section">
+        <!-- Background Glows -->
+        <div class="hero-bg-glow hero-bg-glow-1"></div>
+        <div class="hero-bg-glow hero-bg-glow-2"></div>
 
-                    <!-- Social Proof / Trust Indicators -->
-                    <!-- Social Proof / Trust Indicators -->
-                    <div class="mt-3 pt-2">
-                        <p class="text-muted small mb-2 fw-semibold">تقنيات أعمل بها:</p>
-                        <div
-                            class="d-inline-flex gap-3 align-items-center bg-white bg-opacity-50 p-3 rounded-pill shadow-sm border border-light">
-                            <i class="bi bi-filetype-html fs-2 text-secondary" title="HTML5"></i>
-                            <i class="bi bi-filetype-css fs-2 text-primary" title="CSS3"></i>
-                            <i class="bi bi-filetype-js fs-2 text-warning" title="JavaScript"></i>
-                            <i class="bi bi-wordpress fs-2 text-dark" title="WordPress"></i>
-                            <i class="bi bi-android fs-2 text-success" title="Android"></i>
-                        </div>
-                    </div>
+        <div class="bento-grid">
+            <!-- Main Card - Headline -->
+            <div class="bento-card bento-main" data-aos>
+                <span class="hero-tagline">
+                    <i class="bi bi-stars"></i>
+                    حول أفكارك إلى واقع رقمي
+                </span>
+                <h1 class="hero-title display-hero">
+                    أبني تجارب رقمية<br>
+                    <span class="text-gradient">مذهلة واحترافية</span>
+                </h1>
+                <p class="hero-description">
+                    مطور ويب ومصمم جرافيكس مبدع. أساعد الشركات الناشئة وأصحاب الأعمال على بناء حضور رقمي قوي ومميز.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>ابدأ مشروعك الآن</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline">
+                        <span>شاهد أعمالي</span>
+                        <i class="bi bi-eye"></i>
+                    </a>
                 </div>
+            </div>
 
-                <!-- Hero Image/Illustration -->
-                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0 text-center" data-aos="fade-left" data-aos-duration="1200">
-                    <div id="heroCarousel"
-                        class="carousel slide hero-carousel shadow-lg rounded-4 overflow-hidden position-relative"
-                        data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/project_tamsik_landing.png" class="d-block w-100" alt="Tamsik Project"
-                                    style="height: 450px; object-fit: cover;">
-                                <div
-                                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2 mb-3">
-                                    <h5 class="text-white mb-0">منصة تمسيك</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/project_book_design.png" class="d-block w-100" alt="Book Design"
-                                    style="height: 450px; object-fit: cover;">
-                                <div
-                                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2 mb-3">
-                                    <h5 class="text-white mb-0">تصميم كتب</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/project_logo_design.jpg" class="d-block w-100" alt="Logo Design"
-                                    style="height: 450px; object-fit: cover;">
-                                <div
-                                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2 mb-3">
-                                    <h5 class="text-white mb-0">هوية بصرية</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">السابق</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">التالي</span>
-                        </button>
+            <!-- Status Card -->
+            <div class="bento-card bento-side status-card" data-aos>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    متاح للعمل
+                </div>
+                <div class="status-title">جاهز لمشروعك القادم</div>
+            </div>
 
+            <!-- Profile Card -->
+            <div class="bento-card bento-side profile-card" data-aos>
+                <img src="images/logo.png" alt="عاصم خبش" class="profile-image">
+                <h3 class="profile-name">عاصم خبش</h3>
+                <p class="profile-title">Frontend & Android Developer</p>
+            </div>
 
-                    </div>
-
-                    <!-- Floating Cards Moved Below Slider -->
-                    <div class="d-flex justify-content-center gap-4 mt-4 flex-wrap">
-                        <div class="floating-card glass-card p-3 rounded-4 shadow-lg animate-float-slow">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="icon-box bg-success bg-opacity-10 text-success rounded-circle p-2">
-                                    <i class="bi bi-check-lg fs-4"></i>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0 fw-bold">جودة عالية</h6>
-                                    <small class="text-muted">Code Quality</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="floating-card glass-card p-3 rounded-4 shadow-lg animate-float-fast">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="icon-box bg-warning bg-opacity-10 text-warning rounded-circle p-2">
-                                    <i class="bi bi-star-fill fs-4"></i>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0 fw-bold">50+ مشروع</h6>
-                                    <small class="text-muted">Completed Projects</small>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Tech Stack Card -->
+            <div class="bento-card bento-full" data-aos>
+                <div class="tech-marquee">
+                    <div class="tech-track">
+                        <div class="tech-item"><i class="bi bi-filetype-html"></i> HTML5</div>
+                        <div class="tech-item"><i class="bi bi-filetype-css"></i> CSS3</div>
+                        <div class="tech-item"><i class="bi bi-filetype-js"></i> JavaScript</div>
+                        <div class="tech-item"><i class="bi bi-bootstrap"></i> Bootstrap</div>
+                        <div class="tech-item"><i class="bi bi-filetype-jsx"></i> React</div>
+                        <div class="tech-item"><i class="bi bi-palette"></i> Photoshop</div>
+                        <div class="tech-item"><i class="bi bi-vector-pen"></i> Illustrator</div>
+                        <div class="tech-item"><i class="bi bi-layout-text-window"></i> InDesign</div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="tech-item"><i class="bi bi-filetype-html"></i> HTML5</div>
+                        <div class="tech-item"><i class="bi bi-filetype-css"></i> CSS3</div>
+                        <div class="tech-item"><i class="bi bi-filetype-js"></i> JavaScript</div>
+                        <div class="tech-item"><i class="bi bi-bootstrap"></i> Bootstrap</div>
+                        <div class="tech-item"><i class="bi bi-filetype-jsx"></i> React</div>
+                        <div class="tech-item"><i class="bi bi-palette"></i> Photoshop</div>
+                        <div class="tech-item"><i class="bi bi-vector-pen"></i> Illustrator</div>
+                        <div class="tech-item"><i class="bi bi-layout-text-window"></i> InDesign</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">من أنا</h2>
-                    <div class="title-underline mx-auto"></div>
+            <!-- Stats Cards -->
+            <div class="bento-card bento-third" data-aos>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">+3</div>
+                        <div class="stat-label">سنوات خبرة في الجرافيكس</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">+1</div>
+                        <div class="stat-label">سنة في الويب والأندرويد</div>
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
-                    <h3 class="h4 fw-bold mb-4">عاصم خبش - مهندس حاسوب</h3>
-                    <p class="lead mb-4">
-                        أعمل في مجال العمل الحر، وأقدم خدمات متنوعة تشمل تصميم الهويات البصرية، تطوير مواقع الويب،
-                        تصميم الكتب والمجلات والسير الذاتية، إعداد التقارير والبحوث الأكاديمية (بكالوريوس، ماجستير،
-                        دكتوراه)،
-                        وتوصيف المقررات.
-                    </p>
-                    <p class="mb-4">
-                        أؤمن بأن الجودة والاحترافية هما مفتاح النجاح في أي مشروع. أسعى دائماً لتقديم أفضل الحلول
-                        التي تلبي احتياجات عملائي وتتجاوز توقعاتهم.
-                    </p>
+
+            <div class="bento-card bento-third" data-aos>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">رضا العملاء</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">دعم مستمر</div>
+                    </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h4 class="h5 fw-bold mb-4">الخبرات والتقنيات</h4>
+            </div>
 
-                    <div class="row g-3">
-                        <!-- Backend & Mobile -->
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-filetype-php fs-1 text-primary mb-2 d-inline-block"></i>
-                                <h6 class="small fw-bold mb-0">PHP & Laravel</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-android fs-1 text-success mb-2 d-inline-block"></i>
-                                <h6 class="small fw-bold mb-0">App Dev</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-wordpress fs-1 text-secondary mb-2 d-inline-block"></i>
-                                <h6 class="small fw-bold mb-0">WordPress</h6>
-                            </div>
-                        </div>
-
-                        <!-- Frontend -->
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-code-slash fs-1 text-danger mb-2 d-inline-block"></i>
-                                <h6 class="small fw-bold mb-0">HTML & CSS</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-bootstrap fs-1 text-primary mb-2 d-inline-block"
-                                    style="color: #6610f2!important;"></i>
-                                <h6 class="small fw-bold mb-0">Bootstrap</h6>
-                            </div>
-                        </div>
-
-                        <!-- Design -->
-                        <div class="col-6 col-sm-4">
-                            <div
-                                class="skill-card p-3 rounded-4 bg-white shadow-sm text-center h-100 hover-lift border border-light">
-                                <i class="bi bi-bezier2 fs-1 text-warning mb-2 d-inline-block"></i>
-                                <h6 class="small fw-bold mb-0">Graphic Design</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 p-3 bg-primary bg-opacity-10 rounded-3 border border-primary border-opacity-10">
-                        <div class="d-flex align-items-center gap-3">
-                            <i class="bi bi-mortarboard-fill fs-3 text-primary"></i>
-                            <div>
-                                <h6 class="fw-bold mb-1">أكاديمياً</h6>
-                                <p class="mb-0 small text-muted">تنسيق البحوث العلمية (ماجستير/دكتوراه) وتوصيف المقررات.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bento-card bento-third" data-aos>
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; height: 100%; text-align: center;">
+                    <i class="bi bi-geo-alt"
+                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 0.5rem;"></i>
+                    <div style="font-weight: 700; font-size: 1.2rem;">اليمن - مأرب</div>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">التوقيت المحلي: <span
+                            id="localTime">--:--</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">خدماتي</h2>
-                    <div class="title-underline mx-auto"></div>
-                    <p class="lead text-muted mt-3">أقدم مجموعة متنوعة من الخدمات الاحترافية</p>
+    <section id="services" class="services-section section-padding">
+        <div class="section-header">
+            <span class="section-tag">خدماتي</span>
+            <h2 class="section-title display-section">ما أقدمه لك</h2>
+            <p class="section-subtitle">مجموعة متكاملة من الخدمات الاحترافية لتحقيق رؤيتك الرقمية</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card" data-aos>
+                <div class="service-icon">
+                    <i class="bi bi-code-slash"></i>
                 </div>
+                <h3 class="service-title">تطوير مواقع ويب</h3>
+                <p class="service-description">تطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات مثل HTML, CSS,
+                    Bootstrap, PHP, Laravel.</p>
             </div>
-            <div class="row g-4">
-                <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-palette-fill"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">تصميم هوية بصرية وشعارات</h3>
-                            <p class="text-muted">تصميم شعارات احترافية وهويات بصرية متكاملة تعكس قيم علامتك التجارية
-                                وتميزك عن المنافسين.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-code-slash"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">تطوير مواقع ويب</h3>
-                            <p class="text-muted">تطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات مثل HTML, CSS,
-                                Bootstrap, PHP, Laravel.</p>
-                        </div>
-                    </div>
+            <!-- Service 2 -->
+            <div class="service-card" data-aos>
+                <div class="service-icon">
+                    <i class="bi bi-palette-fill"></i>
                 </div>
-
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-book-fill"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">تصميم كتب ومجلات</h3>
-                            <p class="text-muted">تصميم وتنسيق الكتب، المجلات، البرشورات، والسير الذاتية بشكل احترافي
-                                وجذاب.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-file-earmark-text-fill"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">تنسيق بحوث أكاديمية</h3>
-                            <p class="text-muted">تنسيق البحوث والتقارير الأكاديمية (بكالوريوس، ماجستير، دكتوراه)
-                                وفق المعايير العلمية.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-journal-text"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">توصيف المقررات</h3>
-                            <p class="text-muted">إعداد توصيف المقررات الدراسية والخطط التعليمية بشكل منظم ومتوافق مع
-                                المعايير الأكاديمية.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-card card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-3">
-                                <i class="bi bi-file-earmark-pdf-fill"></i>
-                            </div>
-                            <h3 class="h5 fw-bold mb-3">إعداد تقارير احترافية</h3>
-                            <p class="text-muted">كتابة وتنسيق التقارير الفنية والإدارية والأكاديمية بأعلى معايير الجودة
-                                والاحترافية.</p>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="service-title">تصميم هوية بصرية</h3>
+                <p class="service-description">تصميم شعارات احترافية وهويات بصرية متكاملة تعكس قيم علامتك التجارية
+                    وتميزك عن المنافسين.</p>
             </div>
+
+            <!-- Service 3 -->
+            <div class="service-card" data-aos>
+                <div class="service-icon">
+                    <i class="bi bi-phone"></i>
+                </div>
+                <h3 class="service-title">تطبيقات Android</h3>
+                <p class="service-description">تطوير تطبيقات Android احترافية وعصرية باستخدام أحدث التقنيات مثل Kotlin و
+                    Jetpack Compose.
+                </p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card" data-aos>
+                <div class="service-icon">
+                    <i class="bi bi-book-fill"></i>
+                </div>
+                <h3 class="service-title">تصميم كتب ومجلات</h3>
+                <p class="service-description">تصميم وتنسيق الكتب، المجلات، البرشورات، والسير الذاتية بشكل احترافي
+                    وجذاب.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card" data-aos>
+                <div class="service-icon">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                </div>
+                <h3 class="service-title">تنسيق بحوث أكاديمية</h3>
+                <p class="service-description">تنسيق البحوث والتقارير الأكاديمية (بكالوريوس، ماجستير، دكتوراه) وفق
+                    المعايير العلمية.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">أعمالي</h2>
-                    <div class="title-underline mx-auto"></div>
-                    <p class="lead text-muted mt-3">نماذج من مشاريعي السابقة</p>
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="section-header">
+            <span class="section-tag">أعمالي</span>
+            <h2 class="section-title display-section">مشاريع مميزة</h2>
+            <p class="section-subtitle">نماذج من أحدث أعمالي ومشاريعي الناجحة</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- منصة تمسيك - أقسام الموقع -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/منصة تمسيك أقسام الموقع.png" alt="منصة تمسيك - أقسام الموقع">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">منصة تمسيك - أقسام الموقع</h3>
+                    <p class="portfolio-description">موقع إسلامي متكامل مع لوحة تحكم</p>
                 </div>
             </div>
-            <div class="row g-4 justify-content-center">
-                <!-- Portfolio Item 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/project_tamsik_landing.png" alt="منصة تمسيك الإسلامية" class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-code-slash mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">منصة تمسيك الإسلامية</h4>
-                                    <p class="mb-3">تطوير موقع إسلامي متكامل</p>
-                                    <span class="badge bg-light text-dark mb-2">تطوير ويب</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+
+            <!-- منصة تمسيك - صفحة الخطب -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/منصة تمسيك صفحة الخطب.png" alt="منصة تمسيك - صفحة الخطب">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">منصة تمسيك - صفحة الخطب</h3>
+                    <p class="portfolio-description">صفحة عرض الخطب والدروس الدينية</p>
+                </div>
+            </div>
 
-                <!-- Portfolio Item 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/project_logo_design.jpg" alt="تصميم شعار" class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-palette-fill mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">تصميم شعار احترافي</h4>
-                                    <p class="mb-3">هوية بصرية متكاملة لشركة تقنية</p>
-                                    <span class="badge bg-light text-dark mb-2">تصميم جرافيك</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- منصة تمسيك - صفحة العلماء -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/منصة تمسيك صفحة العلماء.png" alt="منصة تمسيك - صفحة العلماء">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">منصة تمسيك - صفحة العلماء</h3>
+                    <p class="portfolio-description">صفحة عرض العلماء والمشايخ</p>
+                </div>
+            </div>
 
-                <!-- Portfolio Item 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/project_book_design.png" alt="تصميم كتاب" class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-book-fill mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">تصميم كتاب أكاديمي</h4>
-                                    <p class="mb-3">تنسيق وتصميم كتاب علمي</p>
-                                    <span class="badge bg-light text-dark mb-2">تصميم نشر</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- منصة تمسيك - صفحة المحاضرات -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/منصة تمسيك صفحة المحاضرات.png" alt="منصة تمسيك - صفحة المحاضرات">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">منصة تمسيك - صفحة المحاضرات</h3>
+                    <p class="portfolio-description">صفحة عرض المحاضرات والدروس</p>
+                </div>
+            </div>
 
-                <!-- Portfolio Item 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <!-- Updated Image Path to Branded Placeholder -->
-                            <img src="https://placehold.co/600x400/e9ecef/024873?text=E-Commerce+Project"
-                                alt="موقع تجاري" class class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-cart-fill mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">موقع تجاري متجاوب</h4>
-                                    <p class="mb-3">تطوير متجر إلكتروني</p>
-                                    <span class="badge bg-light text-dark mb-2">تجارة إلكترونية</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- تطبيق نظام النماء - لوحة التحكم -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تطبيق أندرويد نظام النماء لوحة التحكم.jpeg" alt="تطبيق نظام النماء - لوحة التحكم">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطبيقات Android</span>
+                    <h3 class="portfolio-title">نظام النماء - لوحة التحكم</h3>
+                    <p class="portfolio-description">تطبيق أندرويد لإدارة المهام والإنتاجية</p>
+                </div>
+            </div>
 
-                <!-- Portfolio Item 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <!-- Updated Image Path to Branded Placeholder -->
-                            <img src="https://placehold.co/600x400/e9ecef/F26725?text=Digital+Magazine" alt="مجلة رقمية"
-                                class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-journal-text mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">تصميم مجلة رقمية</h4>
-                                    <p class="mb-3">تصميم وتنسيق مجلة إلكترونية</p>
-                                    <span class="badge bg-light text-dark mb-2">تصميم نشر</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- تطبيق نظام النماء - مهام اليوم -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تطبيق أندرويد نظام النماء مهام اليوم.jpeg" alt="تطبيق نظام النماء - مهام اليوم">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطبيقات Android</span>
+                    <h3 class="portfolio-title">نظام النماء - مهام اليوم</h3>
+                    <p class="portfolio-description">شاشة عرض مهام اليوم والتخطيط</p>
+                </div>
+            </div>
 
-                <!-- Portfolio Item 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <!-- Updated Image Path to Branded Placeholder -->
-                            <img src="https://placehold.co/600x400/e9ecef/009BB1?text=Academic+Research"
-                                alt="بحث أكاديمي" class="img-fluid"
-                                style="height: 250px; object-fit: contain; width: 100%; background-color: #f8f9fa;">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-info">
-                                    <i class="bi bi-file-earmark-text-fill mb-3" style="font-size: 2.5rem;"></i>
-                                    <h4 class="fw-bold">بحث أكاديمي</h4>
-                                    <p class="mb-3">إعداد وتنسيق رسالة ماجستير</p>
-                                    <span class="badge bg-light text-dark mb-2">بحث علمي</span>
-                                    <a href="#"
-                                        class="btn btn-sm btn-light rounded-pill mt-2 d-block mx-auto w-50 stretched-link fw-bold"><i
-                                            class="bi bi-arrow-up-left"></i> تفاصيل</a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- تطبيق نظام النماء - بومودورو -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تطبيق أندرويد نظام النماء بومودورو.jpeg" alt="تطبيق نظام النماء - بومودورو">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
                     </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطبيقات Android</span>
+                    <h3 class="portfolio-title">نظام النماء - تقنية بومودورو</h3>
+                    <p class="portfolio-description">مؤقت بومودورو للتركيز والإنتاجية</p>
+                </div>
+            </div>
+
+            <!-- تطبيق نظام النماء - تدوين المعرفة -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تطبيق أندرويد نظام النماء تدوين المعرفة.jpeg"
+                        alt="تطبيق نظام النماء - تدوين المعرفة">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطبيقات Android</span>
+                    <h3 class="portfolio-title">نظام النماء - تدوين المعرفة</h3>
+                    <p class="portfolio-description">شاشة تدوين الملاحظات والمعرفة</p>
+                </div>
+            </div>
+
+            <!-- تقرير سنوي - الإحصائيات -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تقرير سنوي احصائيات.png" alt="تقرير سنوي - الإحصائيات">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">تقرير سنوي - الإحصائيات</h3>
+                    <p class="portfolio-description">صفحة عرض الإحصائيات والبيانات</p>
+                </div>
+            </div>
+
+            <!-- تقرير سنوي - المقترحات -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تقرير سنوي المقترحات.png" alt="تقرير سنوي - المقترحات">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تطوير ويب</span>
+                    <h3 class="portfolio-title">تقرير سنوي - المقترحات</h3>
+                    <p class="portfolio-description">صفحة عرض المقترحات والتوصيات</p>
+                </div>
+            </div>
+
+            <!-- تصميم شعار -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تصميم شعار.jpg" alt="تصميم شعار">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تصميم جرافيك</span>
+                    <h3 class="portfolio-title">تصميم شعار احترافي</h3>
+                    <p class="portfolio-description">هوية بصرية متكاملة</p>
+                </div>
+            </div>
+
+            <!-- تصميم كتاب -->
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-image">
+                    <img src="images/تصميم كتاب.png" alt="تصميم كتاب">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="portfolio-link">
+                            <span>عرض المشروع</span>
+                            <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">تصميم نشر</span>
+                    <h3 class="portfolio-title">تصميم كتاب</h3>
+                    <p class="portfolio-description">تنسيق وتصميم كتاب احترافي</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">آراء العملاء</h2>
-                    <div class="title-underline mx-auto"></div>
-                    <p class="lead text-muted mt-3">ماذا يقول عملائي عن خدماتي</p>
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="section-header">
+            <span class="section-tag">آراء العملاء</span>
+            <h2 class="section-title display-section">ماذا يقولون عني</h2>
+            <p class="section-subtitle">شهادات من عملاء سعداء بالتعاون معي</p>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonial-card" data-aos>
+                <div class="testimonial-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 mx-auto" data-aos="zoom-in">
-                    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
-                                class="active" aria-label="Slide 1" title="Go to testimonial 1"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2" title="Go to testimonial 2"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3" title="Go to testimonial 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <!-- Testimonial 1 -->
-                            <div class="carousel-item active">
-                                <div class="testimonial-card card border-0 shadow-sm p-5">
-                                    <div class="text-center mb-4">
-                                        <i class="bi bi-quote text-primary"></i>
-                                    </div>
-                                    <p class="lead text-center mb-4">
-                                        "عمل احترافي ومتقن، تم تسليم المشروع في الوقت المحدد وبجودة عالية جداً.
-                                        أنصح بالتعامل مع عاصم لأي مشروع تصميم أو تطوير."
-                                    </p>
-                                    <div class="text-center">
-                                        <h5 class="fw-bold mb-1">محمد أحمد</h5>
-                                        <p class="text-muted mb-0">مدير شركة تقنية</p>
-                                        <div class="mt-2">
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 2 -->
-                            <div class="carousel-item">
-                                <div class="testimonial-card card border-0 shadow-sm p-5">
-                                    <div class="text-center mb-4">
-                                        <i class="bi bi-quote text-primary"></i>
-                                    </div>
-                                    <p class="lead text-center mb-4">
-                                        "تعاملت مع عاصم في تصميم هوية بصرية لمشروعي، والنتيجة كانت أكثر من رائعة.
-                                        شخص محترف ويفهم متطلبات العميل بسرعة."
-                                    </p>
-                                    <div class="text-center">
-                                        <h5 class="fw-bold mb-1">سارة خالد</h5>
-                                        <p class="text-muted mb-0">صاحبة مشروع تجاري</p>
-                                        <div class="mt-2">
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 3 -->
-                            <div class="carousel-item">
-                                <div class="testimonial-card card border-0 shadow-sm p-5">
-                                    <div class="text-center mb-4">
-                                        <i class="bi bi-quote text-primary"></i>
-                                    </div>
-                                    <p class="lead text-center mb-4">
-                                        "ساعدني عاصم في إعداد وتنسيق رسالة الماجستير الخاصة بي.
-                                        كان متعاوناً جداً ودقيقاً في عمله. شكراً جزيلاً!"
-                                    </p>
-                                    <div class="text-center">
-                                        <h5 class="fw-bold mb-1">د. عبدالله يوسف</h5>
-                                        <p class="text-muted mb-0">باحث أكاديمي</p>
-                                        <div class="mt-2">
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                            <i class="bi bi-star-fill text-warning"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">السابق</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">التالي</span>
-                        </button>
+                <blockquote class="testimonial-quote">
+                    عمل احترافي ومتقن، تم تسليم المشروع في الوقت المحدد وبجودة عالية جداً. أنصح بالتعامل مع عاصم لأي
+                    مشروع تصميم أو تطوير.
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">م</div>
+                    <div class="testimonial-info">
+                        <h4>محمد أحمد</h4>
+                        <p>مدير شركة تقنية</p>
                     </div>
                 </div>
             </div>
@@ -681,170 +505,216 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">تواصل معي</h2>
-                    <div class="title-underline mx-auto"></div>
-                    <p class="lead text-muted mt-3">لديك مشروع؟ دعنا نتحدث!</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- Contact Form -->
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="card border-0 shadow-sm p-4">
-                        <!-- TODO: Replace YOUR_FORM_ID with your actual Formspree ID -->
-                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label fw-semibold">الاسم الكامل</label>
-                                <input type="text" class="form-control form-control-lg" id="fullName" name="name"
-                                    placeholder="أدخل اسمك الكامل" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-semibold">البريد الإلكتروني</label>
-                                <input type="email" class="form-control form-control-lg" id="email" name="email"
-                                    placeholder="example@email.com" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label fw-semibold">الرسالة</label>
-                                <textarea class="form-control form-control-lg" id="message" name="message" rows="5"
-                                    placeholder="اكتب رسالتك هنا..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg w-100">
-                                <i class="bi bi-send-fill me-2"></i>إرسال الرسالة
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="card border-0 shadow-sm p-4 mb-4">
-                        <h4 class="h5 fw-bold mb-4">معلومات التواصل</h4>
-
-                        <div class="contact-info-item d-flex align-items-start mb-3">
-                            <div class="contact-icon me-3">
-                                <i class="bi bi-envelope-fill"></i>
-                            </div>
-                            <div>
-                                <h6 class="fw-semibold mb-1">البريد الإلكتروني</h6>
-                                <p class="text-muted mb-0">asemkhabash@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-item d-flex align-items-start mb-3">
-                            <div class="contact-icon me-3">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-                            <div>
-                                <h6 class="fw-semibold mb-1">الهاتف</h6>
-                                <p class="text-muted mb-0" dir="ltr">+967780002776</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-item d-flex align-items-start">
-                            <div class="contact-icon me-3">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </div>
-                            <div>
-                                <h6 class="fw-semibold mb-1">الموقع</h6>
-                                <p class="text-muted mb-0">اليمن - مأرب</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card border-0 shadow-sm p-4">
-                        <h4 class="h5 fw-bold mb-4">تابعني على</h4>
-                        <div class="social-links d-flex gap-3 flex-wrap">
-                            <a href="https://www.facebook.com/share/19xh213a6A/" class="social-link" title="Facebook">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/asem-khabash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                class="social-link" title="LinkedIn">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <!-- Empty Behance Link with tooltip -->
-                            <a href="#" class="social-link" title="Behance (Coming Soon)" onclick="return false;">
-                                <i class="bi bi-behance"></i>
-                            </a>
-                            <a href="https://github.com/AsemKhabsh" class="social-link" title="GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="http://wa.me/+967780002776" class="social-link" title="WhatsApp">
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-                            <a href="https://www.instagram.com/asem_khabash?igsh=dGYyd2VqbGx1OHlm" class="social-link"
-                                title="Instagram">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="contact-section section-padding">
+        <div class="section-header">
+            <span class="section-tag">تواصل معي</span>
+            <h2 class="section-title display-section">لديك مشروع؟</h2>
+            <p class="section-subtitle">دعنا نتحدث عن كيف يمكنني مساعدتك</p>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-10 mx-auto text-center" data-aos="zoom-in">
-                    <h2 class="display-5 fw-bold text-white mb-4">هل تبحث عن مصمم ومطور ينجز عملك باحترافية؟</h2>
-                    <p class="lead text-white mb-4">تواصل معي الآن ودعنا نحول أفكارك إلى واقع ملموس</p>
-                    <a href="#contact" class="btn btn-light btn-lg px-5">
-                        <i class="bi bi-chat-dots-fill me-2"></i>تواصل معي الآن
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info" data-aos>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                        <div class="contact-label">البريد الإلكتروني</div>
+                        <div class="contact-value">asemkhabash@gmail.com</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div>
+                        <div class="contact-label">الهاتف</div>
+                        <div class="contact-value" dir="ltr">+967 780 002 776</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div>
+                        <div class="contact-label">الموقع</div>
+                        <div class="contact-value">اليمن - مأرب</div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/19xh213a6A/" class="social-link" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/asem-khabash" class="social-link" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AsemKhabsh" class="social-link" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="http://wa.me/+967780002776" class="social-link" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/asem_khabash" class="social-link" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
                     </a>
                 </div>
             </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-aos>
+                <div class="form-group">
+                    <label for="name" class="form-label">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">الرسالة</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="اكتب رسالتك هنا..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="bi bi-send-fill"></i>
+                    <span>إرسال الرسالة</span>
+                </button>
+            </form>
         </div>
     </section>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav fixed-bottom bg-white d-block d-lg-none">
-        <div class="d-flex justify-content-around">
-            <a href="#home" class="mobile-nav-item active">
-                <i class="bi bi-house"></i>
-                <span>الرئيسية</span>
-            </a>
-            <a href="#services" class="mobile-nav-item">
-                <i class="bi bi-grid"></i>
-                <span>خدماتي</span>
-            </a>
-            <a href="#portfolio" class="mobile-nav-item">
-                <i class="bi bi-briefcase"></i>
-                <span>أعمالي</span>
-            </a>
-            <a href="#contact" class="mobile-nav-item">
-                <i class="bi bi-chat-dots"></i>
-                <span>تواصل</span>
-            </a>
-        </div>
-    </nav>
-
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0" style="direction: rtl;"> جميع الحقوق محفوظة &copy; عاصم خبش 2025</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0" style="direction: rtl;">تم التطوير بواسطة: عاصم خبش</p>
-                </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 عاصم خبش. جميع الحقوق محفوظة.</p>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">الرئيسية</a>
+                <a href="#services" class="footer-link">خدماتي</a>
+                <a href="#portfolio" class="footer-link">أعمالي</a>
+                <a href="#contact" class="footer-link">تواصل معي</a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script>
+        // Update local time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', hour12: true });
+            const timeEl = document.getElementById('localTime');
+            if (timeEl) timeEl.textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
 
-    <!-- AOS Animation JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        // Simple scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                }
+            });
+        }, { threshold: 0.1 });
 
-    <!-- Custom Scripts -->
-    <script src="script.js"></script>
+        document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
 
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            updateNavbarBackground();
+        });
+
+        // Active nav link
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    if (navLink) navLink.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            navMenu.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        }
+
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+
+        // Apply saved theme on load
+        if (savedTheme === 'light') {
+            html.setAttribute('data-theme', 'light');
+            themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        }
+
+        // Toggle theme on click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+
+            if (currentTheme === 'light') {
+                html.removeAttribute('data-theme');
+                themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Update navbar background for light mode
+        function updateNavbarBackground() {
+            const navbar = document.querySelector('.navbar');
+            const isLight = html.getAttribute('data-theme') === 'light';
+            if (window.scrollY > 50) {
+                navbar.style.background = isLight ? 'rgba(248, 250, 252, 0.95)' : 'rgba(8, 12, 20, 0.95)';
+            } else {
+                navbar.style.background = isLight ? 'rgba(248, 250, 252, 0.8)' : 'rgba(8, 12, 20, 0.8)';
+            }
+        }
+
+        // Initial navbar background update
+        updateNavbarBackground();
+    </script>
 </body>
 
 </html>
